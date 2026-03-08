@@ -2,7 +2,7 @@
 # qwen3: https://github.com/modelscope/ms-swift/blob/main/examples/train/think_model/qwen3_demo1.sh
 CUDA_VISIBLE_DEVICES=0 \
 swift sft \
-    --model Qwen/Qwen2.5-7B-Instruct \
+    --model /mnt/exp/moe-lite/Qwen \
     --tuner_type lora \
     --dataset 'AI-ModelScope/alpaca-gpt4-data-zh#500' \
               'AI-ModelScope/alpaca-gpt4-data-en#500' \
