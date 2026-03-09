@@ -2,7 +2,7 @@ model: /mnt/exp/moe-lite/Moonlight-16B-A3B-Instruct
 model_type: deepseek_v3
 template: moonlight
 split_dataset_ratio: 0.0
-tuner_type: full
+tuner_type: lora
 torch_dtype: bfloat16
 attn_impl: flash_attn
 num_train_epochs: 5
