@@ -1,4 +1,5 @@
 model: /mnt/exp/moe-lite/Qwen
+model_type: qwen3
 split_dataset_ratio: 0.0
 tuner_type: lora
 torch_dtype: bfloat16
