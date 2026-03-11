@@ -7,7 +7,6 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 \
 megatron sft \
     --model /mnt/exp/moe-lite/Moonlight-16B-A3B-Instruct \
     --save_safetensors true \
-    --ddp_backend gloo \
     --dataset /mnt/exp/moe-lite/Chinese-DeepSeek-R1-Distill-data-110k-SFT \
     --load_from_cache_file true \
     --split_dataset_ratio 0.01 \
