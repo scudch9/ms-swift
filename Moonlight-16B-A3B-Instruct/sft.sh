@@ -7,7 +7,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 \
 megatron sft \
     --model /mnt/exp/moe-lite/Moonlight-16B-A3B-Instruct \
     --save_safetensors true \
-    --dataset /mnt/exp/moe-lite/Dataset \
+    --dataset /mnt/exp/moe-lite/Chinese-DeepSeek-R1-Distill-data-110k-SFT \
     --load_from_cache_file true \
     --split_dataset_ratio 0.01 \
     --pipeline_model_parallel_size 2 \
@@ -29,7 +29,7 @@ megatron sft \
     --lr 1e-5 \
     --lr_warmup_fraction 0.05 \
     --min_lr 1e-6 \
-    --output_dir /mnt/exp/moe-lite/jobs/Moonlight-16B-A3B-Instruct/test_1 \
+    --output_dir /mnt/exp/moe-lite/jobs/Moonlight-16B-A3B-Instruct/Chinese-DeepSeek-R1-Distill-data-110k-SFT \
     --eval_steps 200 \
     --save_steps 200 \
     --max_length 8192 \
