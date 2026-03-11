@@ -1,11 +1,3 @@
-nproc_per_node=8
-
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 \
-NPROC_PER_NODE=$nproc_per_node \
-swift sft \
---config Moonlight-16B-A3B-Instruct/sft.yaml \
---output_dir /mnt/exp/moe-lite/jobs/Moonlight-16B-A3B-Instruct/test_1
-
 # 8 * 60GiB; 9s/it
 # For ease of use, we use moonshotai/Moonlight-16B-A3B-Instruct, which is also based on the DeepseekV3ForCausalLM architecture.
 # https://modelscope.cn/models/moonshotai/Moonlight-16B-A3B-Instruct/file/view/master/config.json?status=1
